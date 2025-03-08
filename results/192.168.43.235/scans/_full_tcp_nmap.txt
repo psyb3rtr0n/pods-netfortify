@@ -1,0 +1,21 @@
+# Nmap 7.94SVN scan initiated Tue Apr 30 11:39:49 2024 as: nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN /home/eni9ma/Final/results/192.168.43.235/scans/_full_tcp_nmap.txt -oX /home/eni9ma/Final/results/192.168.43.235/scans/xml/_full_tcp_nmap.xml 192.168.43.235
+Nmap scan report for 192.168.43.235
+Host is up, received user-set (0.000040s latency).
+Scanned at 2024-04-30 11:40:03 IST for 2s
+All 65535 scanned ports on 192.168.43.235 are in ignored states.
+Not shown: 65535 closed tcp ports (reset)
+Too many fingerprints match this host to give specific OS details
+TCP/IP fingerprint:
+SCAN(V=7.94SVN%E=4%D=4/30%OT=%CT=1%CU=44691%PV=Y%DS=0%DC=L%G=N%TM=66308B3D%P=x86_64-pc-linux-gnu)
+SEQ(CI=Z%II=I)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 0 hops
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Apr 30 11:40:05 2024 -- 1 IP address (1 host up) scanned in 16.65 seconds

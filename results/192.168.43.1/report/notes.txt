@@ -1,0 +1,48 @@
+[*] domain found on tcp/53.
+
+
+
+[*] domain found on tcp/53.
+
+
+
+[*] domain found on tcp/53.
+
+
+
+[*] domain found on udp/53.
+
+
+
+[*] mdns found on udp/5353.
+
+
+
+[*] domain found on tcp/53.
+
+
+
+[*] domain found on tcp/53.
+
+
+
+[*] domain found on udp/53.
+
+
+
+[*] mdns found on udp/5353.
+
+
+
+[*] domain found on tcp/53.
+
+
+
+[*] domain found on udp/53.
+
+
+
+[*] mdns found on udp/5353.
+
+
+

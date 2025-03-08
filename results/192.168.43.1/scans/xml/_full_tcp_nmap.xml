@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Apr 30 11:39:49 2024 as: nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/eni9ma/Final/results/192.168.43.1/scans/_full_tcp_nmap.txt -oX /home/eni9ma/Final/results/192.168.43.1/scans/xml/_full_tcp_nmap.xml 192.168.43.1 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/eni9ma/Final/results/192.168.43.1/scans/_full_tcp_nmap.txt -oX /home/eni9ma/Final/results/192.168.43.1/scans/xml/_full_tcp_nmap.xml 192.168.43.1" start="1714457389" startstr="Tue Apr 30 11:39:49 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1714457390"/>
+<taskend task="NSE" time="1714457390"/>
+<taskbegin task="NSE" time="1714457390"/>
+<taskend task="NSE" time="1714457390"/>
+<taskbegin task="NSE" time="1714457390"/>
+<taskend task="NSE" time="1714457390"/>
+<taskbegin task="ARP Ping Scan" time="1714457390"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.43.1" addrtype="ipv4"/>
+<address addr="0A:2F:E6:1E:43:9D" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1714457390" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1714457390"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1714457403"/>
+<taskbegin task="SYN Stealth Scan" time="1714457403"/>
+<taskend task="SYN Stealth Scan" time="1714457412" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1714457413"/>
+<taskend task="Service scan" time="1714457419" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1714457430"/>
+<taskend task="NSE" time="1714457438"/>
+<taskbegin task="NSE" time="1714457438"/>
+<taskend task="NSE" time="1714457438"/>
+<taskbegin task="NSE" time="1714457438"/>
+<taskend task="NSE" time="1714457438"/>
+<host starttime="1714457403" endtime="1714457438"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.43.1" addrtype="ipv4"/>
+<address addr="0A:2F:E6:1E:43:9D" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65534">
+<extrareasons reason="reset" count="65534" proto="tcp" ports="1-52,54-65535"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="domain" product="dnsmasq" version="2.51" method="probed" conf="10"><cpe>cpe:/a:thekelleys:dnsmasq:2.51</cpe></service><script id="dns-nsid" output="&#xa;  bind.version: dnsmasq-2.51"><elem key="bind.version">dnsmasq-2.51</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="53"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="36375"/>
+<osmatch name="Linux 2.6.32" accuracy="96" line="55372">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="96" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 3.10" accuracy="96" line="56580">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Android 4.1 - 6.0 (Linux 3.4 - 3.14)" accuracy="96" line="31415">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="4.X" accuracy="96"><cpe>cpe:/o:google:android:4</cpe></osclass>
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="5.X" accuracy="96"><cpe>cpe:/o:google:android:5</cpe></osclass>
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="6.X" accuracy="96"><cpe>cpe:/o:google:android:6</cpe></osclass>
+<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Android 5.0 - 6.0.1 (Linux 3.4)" accuracy="96" line="31521">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="5.X" accuracy="96"><cpe>cpe:/o:google:android:5</cpe></osclass>
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="6.X" accuracy="96"><cpe>cpe:/o:google:android:6</cpe></osclass>
+<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+<osmatch name="Android 5.0 - 7.0 (Linux 3.4 - 3.10)" accuracy="96" line="31549">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="5.X" accuracy="96"><cpe>cpe:/o:google:android:5</cpe></osclass>
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="6.X" accuracy="96"><cpe>cpe:/o:google:android:6</cpe></osclass>
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="7.X" accuracy="96"><cpe>cpe:/o:google:android:7</cpe></osclass>
+<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Android 4.2.2 (Linux 3.4)" accuracy="95" line="31242">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="4.2.X" accuracy="95"><cpe>cpe:/o:google:android:4.2.2</cpe></osclass>
+<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 3.16" accuracy="95" line="65151">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.1" accuracy="95" line="62926">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2" accuracy="95" line="64673">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.2</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.94SVN%E=4%D=4/30%OT=53%CT=1%CU=36375%PV=Y%DS=1%DC=D%G=Y%M=0A2FE&#xa;OS:6%TM=66308B5E%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=10C%TI=Z%CI=Z%I&#xa;OS:I=I%TS=7)OPS(O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW&#xa;OS:9%O5=M5B4ST11NW9%O6=M5B4ST11)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF&#xa;OS:%W6=FFFF)ECN(R=Y%DF=Y%T=40%W=FFFF%O=M5B4NNSNW9%CC=Y%Q=)T1(R=Y%DF=Y%T=40%&#xa;OS:S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%&#xa;OS:RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W&#xa;OS:=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)&#xa;OS:U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%D&#xa;OS:FI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="23241" lastboot="Tue Apr 30 05:13:17 2024"/>
+<distance value="1"/>
+<tcpsequence index="260" difficulty="Good luck!" values="C9F5A5FD,3E1093D3,8BCF1566,7BCD6034,CB495912,7EAA2356"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="100HZ" values="23731E,237328,237332,23733C,237346,237350"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.43.1" rtt="3.15"/>
+</trace>
+<times srtt="3154" rttvar="1201" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1714457438"/>
+<taskend task="NSE" time="1714457438"/>
+<taskbegin task="NSE" time="1714457438"/>
+<taskend task="NSE" time="1714457438"/>
+<taskbegin task="NSE" time="1714457438"/>
+<taskend task="NSE" time="1714457438"/>
+<runstats><finished time="1714457438" timestr="Tue Apr 30 11:40:38 2024" summary="Nmap done at Tue Apr 30 11:40:38 2024; 1 IP address (1 host up) scanned in 49.54 seconds" elapsed="49.54" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
