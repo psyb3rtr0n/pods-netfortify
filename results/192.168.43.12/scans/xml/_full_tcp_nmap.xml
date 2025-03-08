@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Mon Apr 29 10:45:59 2024 as: nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/eni9ma/Final/results/192.168.43.12/scans/_full_tcp_nmap.txt -oX /home/eni9ma/Final/results/192.168.43.12/scans/xml/_full_tcp_nmap.xml 192.168.43.12 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/eni9ma/Final/results/192.168.43.12/scans/_full_tcp_nmap.txt -oX /home/eni9ma/Final/results/192.168.43.12/scans/xml/_full_tcp_nmap.xml 192.168.43.12" start="1714367759" startstr="Mon Apr 29 10:45:59 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1714367759"/>
+<taskend task="NSE" time="1714367759"/>
+<taskbegin task="NSE" time="1714367759"/>
+<taskend task="NSE" time="1714367759"/>
+<taskbegin task="NSE" time="1714367759"/>
+<taskend task="NSE" time="1714367759"/>
+<taskbegin task="ARP Ping Scan" time="1714367759"/>
+<taskend task="ARP Ping Scan" time="1714367761" extrainfo="1 total hosts"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="192.168.43.12" addrtype="ipv4"/>
+</host>
+<taskbegin task="NSE" time="1714367761"/>
+<taskend task="NSE" time="1714367761"/>
+<taskbegin task="NSE" time="1714367761"/>
+<taskend task="NSE" time="1714367761"/>
+<taskbegin task="NSE" time="1714367761"/>
+<taskend task="NSE" time="1714367761"/>
+<runstats><finished time="1714367761" timestr="Mon Apr 29 10:46:01 2024" summary="Nmap done at Mon Apr 29 10:46:01 2024; 1 IP address (0 hosts up) scanned in 3.14 seconds" elapsed="3.14" exit="success"/><hosts up="0" down="1" total="1"/>
+</runstats>
+</nmaprun>

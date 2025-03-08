@@ -1,0 +1,16 @@
+
+; <<>> DiG 9.19.21-1-Debian <<>> -p 53 -x 192.168.43.1 @192.168.43.1
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 5082
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;1.43.168.192.in-addr.arpa.	IN	PTR
+
+;; Query time: 4 msec
+;; SERVER: 192.168.43.1#53(192.168.43.1) (UDP)
+;; WHEN: Tue Apr 30 11:48:16 IST 2024
+;; MSG SIZE  rcvd: 43
+
+

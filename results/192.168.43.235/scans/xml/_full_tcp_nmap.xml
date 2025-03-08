@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Apr 30 11:39:49 2024 as: nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/eni9ma/Final/results/192.168.43.235/scans/_full_tcp_nmap.txt -oX /home/eni9ma/Final/results/192.168.43.235/scans/xml/_full_tcp_nmap.xml 192.168.43.235 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/eni9ma/Final/results/192.168.43.235/scans/_full_tcp_nmap.txt -oX /home/eni9ma/Final/results/192.168.43.235/scans/xml/_full_tcp_nmap.xml 192.168.43.235" start="1714457389" startstr="Tue Apr 30 11:39:49 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1714457390"/>
+<taskend task="NSE" time="1714457390"/>
+<taskbegin task="NSE" time="1714457390"/>
+<taskend task="NSE" time="1714457390"/>
+<taskbegin task="NSE" time="1714457390"/>
+<taskend task="NSE" time="1714457390"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1714457390"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1714457403"/>
+<taskbegin task="SYN Stealth Scan" time="1714457403"/>
+<taskend task="SYN Stealth Scan" time="1714457404" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1714457404"/>
+<taskbegin task="NSE" time="1714457405"/>
+<taskend task="NSE" time="1714457405"/>
+<taskbegin task="NSE" time="1714457405"/>
+<taskend task="NSE" time="1714457405"/>
+<taskbegin task="NSE" time="1714457405"/>
+<taskend task="NSE" time="1714457405"/>
+<host starttime="1714457403" endtime="1714457405"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.43.235" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65535">
+<extrareasons reason="reset" count="65535" proto="tcp" ports="1-65535"/>
+</extraports>
+</ports>
+<os><portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="44691"/>
+<osfingerprint fingerprint="SCAN(V=7.94SVN%E=4%D=4/30%OT=%CT=1%CU=44691%PV=Y%DS=0%DC=L%G=N%TM=66308B3D%P=x86_64-pc-linux-gnu)&#xa;SEQ(CI=Z%II=I)&#xa;T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)&#xa;T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)&#xa;T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)&#xa;U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)&#xa;IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<distance value="0"/>
+<times srtt="40" rttvar="23" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1714457405"/>
+<taskend task="NSE" time="1714457405"/>
+<taskbegin task="NSE" time="1714457405"/>
+<taskend task="NSE" time="1714457405"/>
+<taskbegin task="NSE" time="1714457405"/>
+<taskend task="NSE" time="1714457405"/>
+<runstats><finished time="1714457405" timestr="Tue Apr 30 11:40:05 2024" summary="Nmap done at Tue Apr 30 11:40:05 2024; 1 IP address (1 host up) scanned in 16.65 seconds" elapsed="16.65" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

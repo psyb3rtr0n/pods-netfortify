@@ -1,0 +1,43 @@
+```bash
+nmap -vv --reason -Pn -T4 -sU -sV -p 53 --script="banner,(dns* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN "/home/eni9ma/Final/results/192.168.43.1/scans/udp53/udp_53_dns_nmap.txt" -oX "/home/eni9ma/Final/results/192.168.43.1/scans/udp53/xml/udp_53_dns_nmap.xml" 192.168.43.1
+```
+
+[/home/eni9ma/Final/results/192.168.43.1/scans/udp53/udp_53_dns_nmap.txt](file:///home/eni9ma/Final/results/192.168.43.1/scans/udp53/udp_53_dns_nmap.txt):
+
+```
+# Nmap 7.94SVN scan initiated Tue Apr 30 11:48:16 2024 as: nmap -vv --reason -Pn -T4 -sU -sV -p 53 "--script=banner,(dns* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/eni9ma/Final/results/192.168.43.1/scans/udp53/udp_53_dns_nmap.txt -oX /home/eni9ma/Final/results/192.168.43.1/scans/udp53/xml/udp_53_dns_nmap.xml 192.168.43.1
+Nmap scan report for 192.168.43.1
+Host is up, received arp-response (0.017s latency).
+Scanned at 2024-04-30 11:48:30 IST for 4s
+
+PORT   STATE SERVICE REASON              VERSION
+53/udp open  domain  udp-response ttl 64 dnsmasq 2.51
+|_dns-nsec-enum: Can't determine domain for host 192.168.43.1; use dns-nsec-enum.domains script arg.
+| dns-nsid: 
+|_  bind.version: dnsmasq-2.51
+|_dns-nsec3-enum: Can't determine domain for host 192.168.43.1; use dns-nsec3-enum.domains script arg.
+|_dns-recursion: Recursion appears to be enabled
+| dns-cache-snoop: 13 of 100 tested domains are cached.
+| baidu.com
+| www.baidu.com
+| www.wikipedia.org
+| qq.com
+| www.qq.com
+| www.taobao.com
+| www.sina.com.cn
+| 163.com
+| www.163.com
+| xvideos.com
+| www.xvideos.com
+| weibo.com
+|_www.weibo.com
+MAC Address: 0A:2F:E6:1E:43:9D (Unknown)
+
+Host script results:
+|_dns-brute: Can't guess domain of "192.168.43.1"; use dns-brute.domain script argument.
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Apr 30 11:48:34 2024 -- 1 IP address (1 host up) scanned in 17.94 seconds
+
+```

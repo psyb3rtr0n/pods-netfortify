@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Apr 30 11:48:16 2024 as: nmap -vv -&#45;reason -Pn -T4 -sU -sV -p 5353 &quot;-&#45;script=banner,(dns* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/eni9ma/Final/results/192.168.43.1/scans/udp5353/udp_5353_multicastdns_nmap.txt -oX /home/eni9ma/Final/results/192.168.43.1/scans/udp5353/xml/udp_5353_multicastdns_nmap.xml 192.168.43.1 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sU -sV -p 5353 &quot;-&#45;script=banner,(dns* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/eni9ma/Final/results/192.168.43.1/scans/udp5353/udp_5353_multicastdns_nmap.txt -oX /home/eni9ma/Final/results/192.168.43.1/scans/udp5353/xml/udp_5353_multicastdns_nmap.xml 192.168.43.1" start="1714457896" startstr="Tue Apr 30 11:48:16 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="udp" protocol="udp" numservices="1" services="5353"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1714457896"/>
+<taskend task="NSE" time="1714457896"/>
+<taskbegin task="NSE" time="1714457896"/>
+<taskend task="NSE" time="1714457896"/>
+<taskbegin task="NSE" time="1714457896"/>
+<taskend task="NSE" time="1714457896"/>
+<taskbegin task="ARP Ping Scan" time="1714457896"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.43.1" addrtype="ipv4"/>
+<address addr="0A:2F:E6:1E:43:9D" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1714457896" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1714457896"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1714457909"/>
+<taskbegin task="UDP Scan" time="1714457909"/>
+<taskend task="UDP Scan" time="1714457910" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1714457910"/>
+<taskbegin task="NSE" time="1714457910"/>
+<taskend task="NSE" time="1714457910"/>
+<taskbegin task="NSE" time="1714457910"/>
+<taskend task="NSE" time="1714457910"/>
+<taskbegin task="NSE" time="1714457910"/>
+<taskend task="NSE" time="1714457910"/>
+<host starttime="1714457910" endtime="1714457910"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.43.1" addrtype="ipv4"/>
+<address addr="0A:2F:E6:1E:43:9D" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="udp" portid="5353"><state state="open" reason="udp-response" reason_ttl="255"/><service name="mdns" product="DNS-based service discovery" method="probed" conf="10"/><script id="dns-service-discovery" output="&#xa;  56666/udp mi-connect&#xa;    idHash=MTY2&#xa;    dev=1&#xa;    sec=2&#xa;    apps=[8193, 8194]&#xa;    name=Doomz Day&#xa;    flags=Ag==&#xa;    version=65540&#xa;    commonData=0&#xa;    appsData=AwIEgwIEgw==&#xa;    Address=192.168.43.1 2409:4080:e19:3107::9b&#xa;"/></port>
+</ports>
+<hostscript><script id="dns-brute" output="Can&apos;t guess domain of &quot;192.168.43.1&quot;; use dns-brute.domain script argument."/></hostscript><times srtt="16572" rttvar="19807" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1714457910"/>
+<taskend task="NSE" time="1714457910"/>
+<taskbegin task="NSE" time="1714457910"/>
+<taskend task="NSE" time="1714457910"/>
+<taskbegin task="NSE" time="1714457910"/>
+<taskend task="NSE" time="1714457910"/>
+<runstats><finished time="1714457910" timestr="Tue Apr 30 11:48:30 2024" summary="Nmap done at Tue Apr 30 11:48:30 2024; 1 IP address (1 host up) scanned in 13.71 seconds" elapsed="13.71" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
